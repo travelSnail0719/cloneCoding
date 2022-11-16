@@ -1,7 +1,7 @@
 const circleList = document.querySelectorAll('.circle');
 const nextButton = document.getElementById('next');
 const prevButton = document.getElementById('prev');
-const progress = document.getElementById('progress')
+const progress = document.getElementById('progress');
 
 console.log('circleList', circleList);
 
