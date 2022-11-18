@@ -9,11 +9,10 @@ btn.addEventListener('click', () => {
     } else {
         search.classList.add('active');
         input.focus();
-    } 
+    }
 });
 
 /* btn.addEventListener('click', () => {
     search.classList.toggle('active');
     input.focus();
 }); */
-
