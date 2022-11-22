@@ -1,28 +1,30 @@
-/* body>section.bgImage{
+body>section.bgImage{
     background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80');
+    z-index: -1;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
     position: absolute;
 }
 
 body{
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body>div.lodingCnt{
     color: white;
     z-index: 0;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 *{
     box-sizing: border-box;
-} */
+}
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
   box-sizing: border-box;
@@ -53,4 +55,4 @@ body>section.bgImage {
 body>div.lodingCnt {
   font-size: 50px;
   color: #fff;
-}
+} */
