@@ -99,23 +99,3 @@ body {
   color: lightblue;
   transform: translateY(-30px);
 }
-
-.td0{
-    transition-delay: 0ms;
-}
-
-.td50{
-    transition-delay: 50ms;
-}
-
-.td100{
-    transition-delay: 100ms;
-}
-
-.td150{
-    transition-delay: 150ms;
-}
-
-.td200{
-    transition-delay: 200ms;
-}
