@@ -4,7 +4,7 @@ const contentEl = document.querySelector('.content');
 window.addEventListener('keydown', (e) => {
     // contentEl.style.display = 'none';
 
-    containerEl.innerHTML = `<div class="content">${e.key === " " ? "Spcae" : e.key}
+    containerEl.innerHTML = `<div class="content">${e.key === " " ? "Space" : e.key}
                              <small> event.key </small>
                              </div>
                              <div class="content">${e.keyCode}
