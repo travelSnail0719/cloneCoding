@@ -5,7 +5,7 @@ textAreaEl.addEventListener('keyup', (e) =>{
     const makeElement = e.target.value;
     // 입력 받은 숫자를 배열로 변환하고 공백 제거
     const element = makeElement.split(',').filter(item => item.trim() !== '').map(item => item.trim());
-    
+    console.log('divEL', divEl.innerHTML);
     divEl.innerHTML = '';
     // 배열을 반복문을 통해 span태그 생성 및 클래스명 주입
     element.forEach(item => {
@@ -13,7 +13,6 @@ textAreaEl.addEventListener('keyup', (e) =>{
         spanEl.classList.add('tag');
         spanEl.innerText = item;
         divEl.appendChild(spanEl);
-
     });
 
     if(e.keyCode === 13){
