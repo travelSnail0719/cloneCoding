@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const fans = +counter.innerText
             console.log('target', target);
             // 증가값
-            const increment = target / 200
+            const increment = target / 200;
             
             // data-target가 더 클 때
             if(fans < target) {
