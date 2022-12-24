@@ -3,6 +3,9 @@ const htmlEl = document.querySelector('html');
 const timeEl = document.querySelector('.time');
 const dateEl = document.querySelector('.date');
 const circleEl = document.querySelector('.circle');
+const hourEl = document.querySelector('.hour');
+const minuteEl = document.querySelector('.minute');
+const secondEl = document.querySelector('.second');
 
 toggleEl.addEventListener('click', (e) => {
     if(htmlEl.classList.contains('dark')){
@@ -17,6 +20,7 @@ toggleEl.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     setTime();
+    setInterval(setTime, 1000);
 })
 
 const setTime = () => {
@@ -30,9 +34,21 @@ const setTime = () => {
     const getAmPm = getHour >= 12 ? 'PM' : 'AM';
     const curTime = date.toString().substr(16, 5);
     const month = date.getMonth();
+
+    const getMinute = date.getMinutes();
+    // 시침
+    const degH = getHour * (360 / 12) + getMinute * (360 / 12 / 60);
+    // 분침
+    const degM = getMinute * (360 / 60);
+    const getSecond = date.getSeconds();
+    // 초침
+    const degS = getSecond * (360 / 60);
+    console.log('degS', degS);
+    hourEl.style.transform = `translate(-50%, -100%) rotateZ(${degH}deg)`
+    minuteEl.style.transform = `translate(-50%, -100%) rotateZ(${degM}deg)`
+    secondEl.style.transform = `translate(-50%, -100%) rotateZ(${degS}deg)`
     
 
     timeEl.textContent = `${curTime} ${getAmPm}`
     dateEl.innerHTML = `${dayArr[day]}, ${monthArr[month]} <span class="circle">${curDate}</span>`
 }
-
