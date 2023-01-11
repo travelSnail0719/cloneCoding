@@ -11,7 +11,6 @@ const eraserEl = document.getElementById('eraser');
 document.addEventListener('DOMContentLoaded', () => {    
     // 선 굵기
     context.lineWidth = 5;
-    context.strokeStyle = 'black';
 
     myCanvasEl.addEventListener('mousemove', (e) => {mouseMove(e)}, false);
     myCanvasEl.addEventListener('mousedown', (e) => {mouseDown(e)}, false);
