@@ -8,7 +8,8 @@ const topValue = -300;
 leftSlideEl.style.top = `${topValue}vh`
 
 // 원 작성자는 clientHeight를 통해 높이를 구했을 떄 915가 나오는데 나는 왜 895가 나올까??
-const sliderHeight = 915;
+// const sliderHeight = 915;
+const sliderHeight = document.body.clientHeight;
 
 let divCnt = 0;
 
