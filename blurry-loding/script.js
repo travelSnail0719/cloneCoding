@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
             clearInterval(startInterval);
         }
     }
-    let startInterval = setInterval(increaseCnt, 30);
+    let startInterval = terval(increaseCnt, 30);
 });
 
 // 원작자 코드
