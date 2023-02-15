@@ -44,6 +44,8 @@ generateEl.addEventListener('click', () => {
 });
 
 const clipboardEl = document.getElementById('clipboard');
+// clipboard API사용
+// document.ececCommand('copy')는 웹표준에서 Deprecated 되었음
 clipboardEl.addEventListener('click', () =>{
     if(resultEl.innerText == ''){
         alert('비밀번호 생성되지 않았음');
